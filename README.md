@@ -20,10 +20,16 @@ Apple 소셜 로그인을 구현한 프로젝트입니다. 실제로 구동 테�
 이 프로젝트는 kevin-dev-oauth-apple-v1과는 다르게 RestTemplate가 아닌 Feign Client로 진행했습니다.
 그렇기 때문에 v1과는 다르게 RestTemplate보다 더 많은 코드의 축소를 확인할 수 있습니다.
 
+기본적인 틀은 v1과 동일하기에 불필요한 내용은 생략하였습니다.
+
 ## 👀 Overview
 - Apple Login
-
+  * 로그인 화면 리다이렉트 (getRedirectUri)
+  * 'id_token'을 public key로 사용자 정보 가져오기 (getUserId)
+  * Private key를 이용하여 client_secret을 만들고 다른 정보들과 취합하여 Apple로 부터 'refresh_token' 발급 (getAccessToken)
+  
 ## 🚀 Getting Started
+**dependencies**
 ```
 implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 implementation group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.69'
