@@ -15,7 +15,7 @@
 - [Commit Message (Gitmoji)](#✉️-commit-messages-gitmoji)
 
 ## 🎉 About
-간단한 Apple 로그인을 구현한 프로젝트입니다. (Feign Client)
+Feign Client를 이용한 Apple 소셜 로그인을 구현한 프로젝트입니다. 실제로 구동 테스트를 해보지 않은 프로젝트이므로 참고만 해주시길 바랍니다.
 
 ## 👀 Overview
 - Apple Login
@@ -35,7 +35,7 @@ implementation group: 'org.springframework.cloud', name: 'spring-cloud-openfeign
 ```
 sudo yum install -y git 
 sudo yum install -y java-1.8.0-openjdk-devel.x86_64 
-git clone https://github.com/ozofweird/kevin-dev-oauth-apple-v1.git 
+git clone https://github.com/ozofweird/kevin-dev-oauth-apple-v2.git 
 cd kevin-dev-oauth-apple 
 sudo chmod +x gradlew 
 sudo ./gradlew clean build 
