@@ -91,13 +91,7 @@ public class AppleService {
     }
 
     public AppleAccessTokenRes.Response getAccessToken(String authorizationCode) {
-        /*
-        private String code;
-        private String client_id;
-        private String client_secret;
-        private String grant_type;
-        private String redirect_uri;
-         */
+
         String clientSecret = "";
         try {
             clientSecret = createClientSecret();
