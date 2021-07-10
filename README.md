@@ -15,7 +15,10 @@
 - [Commit Message (Gitmoji)](#✉️-commit-messages-gitmoji)
 
 ## 🎉 About
-Feign Client를 이용한 Apple 소셜 로그인을 구현한 프로젝트입니다. 실제로 구동 테스트를 해보지 않은 프로젝트이므로 참고만 해주시길 바랍니다.
+Apple 소셜 로그인을 구현한 프로젝트입니다. 실제로 구동 테스트를 해보지 않은 프로젝트이므로 참고만 해주시길 바랍니다.
+
+이 프로젝트는 kevin-dev-oauth-apple-v1과는 다르게 RestTemplate가 아닌 Feign Client로 진행했습니다.
+그렇기 때문에 v1과는 다르게 RestTemplate보다 더 많은 코드의 축소를 확인할 수 있습니다.
 
 ## 👀 Overview
 - Apple Login
